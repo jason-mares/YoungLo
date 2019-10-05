@@ -1,0 +1,135 @@
+@import 'mixins.less';
+@import 'typography.less';
+
+@white: #ffffff;
+@black: #000000;
+@yellow: #fece00;
+
+
+
+body {
+    font-family: stratos, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    &.textLink {
+        background-color: @black;
+        color: @yellow;
+        padding: 0 3px;
+        &:hover {
+            color: @white;
+        }
+    }
+}
+
+i {
+    font-family: stratos, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: stratos, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+button,
+input[type="submit"] {
+    background-color: @yellow;
+    color: @white;
+    border: 0px;
+    outline: 0px;
+    border-radius: 32px;
+    padding: 16px 45px;
+    font-family: stratos, sans-serif;
+    font-size: 16px;
+    transition: 0.12s ease-out all;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: saturate(@yellow, 12%);
+        -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.63);
+        -moz-box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.63);
+        box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.63);
+    }
+    
+    &:active {
+        background-color: desaturate(@yellow, 3%);
+        transform: translateY(3px);
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        
+        -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0,0,0,0.16);
+        -moz-box-shadow: inset 0px 2px 0px 0px rgba(0,0,0,0.16);
+        box-shadow: inset 0px 2px 0px 0px rgba(0,0,0,0.16);
+    }
+}
+
+.hero {
+    height: 100vh;
+    .flex-table;
+    align-items: center;
+    justify-content: center;
+    .hero-content {
+        z-index: 3;
+        position: relative;
+        color: @white;
+    }
+    
+    .overlay {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 2;
+        background-color: fade(@black, 63%);
+    }
+    p.intro {
+        margin: 0 auto;
+        max-width: 667px;
+        width: 100%;
+    }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
