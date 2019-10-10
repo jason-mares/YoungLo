@@ -472,6 +472,10 @@ h1 {
   display: table;
   clear: both;
 }
+body,
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: stratos, sans-serif;
   font-weight: 400;
