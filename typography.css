@@ -58,7 +58,7 @@ h1 {
 }
 .fs32 {
   font-size: 32px !important;
-  line-height: 1;
+  line-height: 1.4;
 }
 @media (max-width: 768px) {
   .fs32 {
@@ -637,7 +637,7 @@ h1 {
 }
 .fs32 {
   font-size: 32px !important;
-  line-height: 1;
+  line-height: 1.4;
 }
 @media (max-width: 768px) {
   .fs32 {
